@@ -18,7 +18,7 @@ class Person(DateTimeModel):
     lastname = models.CharField(max_length=20)
     age = models.IntegerField()
     ident_number = models.CharField(max_length=12, blank=True)
-    id_user = models.ForeignKey('User', on_delete = models.CASCADE, blank=False, null=False, default=1)
+    #id_user = models.ForeignKey('User', on_delete = models.CASCADE, blank=False, null=False, default=1)
 
 class Students(DateTimeModel):
     code = models.CharField(max_length = 100)
